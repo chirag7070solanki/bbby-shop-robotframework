@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="0" skip="0"><testcase classname="testcases.l2plploading_nose.PlpLoading" name="test_test_01_00001___Bath____Bath_Ru__" time="43.097"><system-out><![CDATA[Set up in progress
+Trying to launch Chrome browser
+Bath
+Bath Ru
+IO pop up present
+IO modal closed
+Navigating to L0
+Navigating to L1
+Navigating to L2
+Element is not present - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='top-nav-menu']/div[1]//div[contains(@class,'MegaMenu')]/section/div[1]/div[1]/a[contains(text(),'Bath')]/following-sibling::section/div/div/a[@data-locator="Bath Ru_menuLink"] "}
+  (Session info: chrome=79.0.3945.88)
+
+Test complete, cleaning up now!
+]]></system-out><system-err><![CDATA[/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py:608: RuntimeWarning: TestResult has no addExpectedFailure method, reporting as passes
+  warnings.warn("TestResult has no addExpectedFailure method, reporting as passes",
+]]></system-err></testcase><testcase classname="testcases.l2plploading_nose.PlpLoading" name="test_test_01_00002___Bath____Bath_Towels__" time="43.232"><system-out><![CDATA[Set up in progress
+Trying to launch Chrome browser
+Bath
+Bath Towels
+IO pop up present
+IO modal closed
+Navigating to L0
+Navigating to L1
+Navigating to L2
+Element is not present - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='top-nav-menu']/div[1]//div[contains(@class,'MegaMenu')]/section/div[1]/div[1]/a[contains(text(),'Bath')]/following-sibling::section/div/div/a[@data-locator="Bath Towels_menuLink"] "}
+  (Session info: chrome=79.0.3945.88)
+
+Test complete, cleaning up now!
+]]></system-out></testcase></testsuite>

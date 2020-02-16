@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on darwin)" generated="20200215 19:10:01.292" rpa="false">
+<suite id="s1" name="MyTestSuite" source="/Users/chiragsolanki/PycharmProjects/Shop-Automation/testcases/MyTestSuite.robot">
+<test id="s1-t1" name="PLP Loading 1">
+<kw name="I open website" library="HomepageStepDefs" type="setup">
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${selenium_functions}</arg>
+<arg>set_web_driver_and_launch_site</arg>
+<arg>chrome</arg>
+<arg>https://bedbathandbeyond.com</arg>
+</arguments>
+<assign>
+<var>${driver}</var>
+</assign>
+<msg timestamp="20200215 19:10:22.905" level="INFO">In Selenium Functions
+chrome
+https://bedbathandbeyond.com
+Trying to launch Chrome browser
+IO pop up present
+IO modal closed</msg>
+<msg timestamp="20200215 19:10:22.905" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="2395da6c749b9c146663d9fd6e406b69")&gt;</msg>
+<status status="PASS" starttime="20200215 19:10:01.543" endtime="20200215 19:10:22.905"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${driver}</arg>
+</arguments>
+<msg timestamp="20200215 19:10:22.907" level="INFO">&lt;selenium.webdriver.chrome.webdriver.WebDriver (session="2395da6c749b9c146663d9fd6e406b69")&gt;</msg>
+<status status="PASS" starttime="20200215 19:10:22.906" endtime="20200215 19:10:22.907"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${globaldriver}</arg>
+<arg>${driver}</arg>
+</arguments>
+<msg timestamp="20200215 19:10:22.907" level="INFO">${globaldriver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="2395da6c749b9c146663d9fd6e406b69")&gt;</msg>
+<status status="PASS" starttime="20200215 19:10:22.907" endtime="20200215 19:10:22.908"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${globaldriver}</arg>
+</arguments>
+<msg timestamp="20200215 19:10:22.908" level="INFO">&lt;selenium.webdriver.chrome.webdriver.WebDriver (session="2395da6c749b9c146663d9fd6e406b69")&gt;</msg>
+<status status="PASS" starttime="20200215 19:10:22.908" endtime="20200215 19:10:22.908"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:01.542" endtime="20200215 19:10:22.908"></status>
+</kw>
+<kw name="When I choose to close IO pop up modal" library="HomepageStepDefs">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Complete</arg>
+</arguments>
+<msg timestamp="20200215 19:10:22.909" level="INFO">Complete</msg>
+<status status="PASS" starttime="20200215 19:10:22.909" endtime="20200215 19:10:22.910"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:22.909" endtime="20200215 19:10:22.910"></status>
+</kw>
+<kw name="Then I choose to navigate to L2 PLP" library="HomepageStepDefs">
+<arguments>
+<arg>Bath</arg>
+<arg>Bath Towels</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Navigating to L2 PLP</arg>
+</arguments>
+<msg timestamp="20200215 19:10:22.911" level="INFO">Navigating to L2 PLP</msg>
+<status status="PASS" starttime="20200215 19:10:22.910" endtime="20200215 19:10:22.911"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${homepage}</arg>
+<arg>navigate_to_l0</arg>
+<arg>${globaldriver}</arg>
+<arg>Categories</arg>
+</arguments>
+<msg timestamp="20200215 19:10:28.254" level="INFO">Navigating to L0</msg>
+<status status="PASS" starttime="20200215 19:10:22.911" endtime="20200215 19:10:28.255"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${homepage}</arg>
+<arg>navigate_to_l1</arg>
+<arg>${globaldriver}</arg>
+<arg>move to</arg>
+<arg>${l1cat}</arg>
+</arguments>
+<msg timestamp="20200215 19:10:33.858" level="INFO">Navigating to L1
+&lt;selenium.webdriver.chrome.webdriver.WebDriver (session="2395da6c749b9c146663d9fd6e406b69")&gt;
+Bath</msg>
+<status status="PASS" starttime="20200215 19:10:28.255" endtime="20200215 19:10:33.858"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${homepage}</arg>
+<arg>navigate_to_l2</arg>
+<arg>${globaldriver}</arg>
+<arg>click</arg>
+<arg>${l1cat}</arg>
+<arg>${l2cat}</arg>
+</arguments>
+<msg timestamp="20200215 19:10:39.281" level="INFO">Navigating to L2</msg>
+<status status="PASS" starttime="20200215 19:10:33.859" endtime="20200215 19:10:39.282"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:22.910" endtime="20200215 19:10:39.282"></status>
+</kw>
+<kw name="Then I verify user landed on PLP" library="HomepageStepDefs">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Checking if PLP is loaded</arg>
+</arguments>
+<msg timestamp="20200215 19:10:39.283" level="INFO">Checking if PLP is loaded</msg>
+<status status="PASS" starttime="20200215 19:10:39.283" endtime="20200215 19:10:39.283"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${plp}</arg>
+<arg>check_per_page_sort</arg>
+<arg>${globaldriver}</arg>
+</arguments>
+<msg timestamp="20200215 19:10:39.348" level="INFO">Per Page Sort option available</msg>
+<status status="PASS" starttime="20200215 19:10:39.283" endtime="20200215 19:10:39.349"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${plp}</arg>
+<arg>check_if_product_grid_displayed</arg>
+<arg>${globaldriver}</arg>
+</arguments>
+<msg timestamp="20200215 19:10:44.866" level="INFO">Number of products on PLP:24</msg>
+<status status="PASS" starttime="20200215 19:10:39.349" endtime="20200215 19:10:44.866"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:39.282" endtime="20200215 19:10:44.866"></status>
+</kw>
+<kw name="I close browser" library="HomepageStepDefs" type="teardown">
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${selenium_functions}</arg>
+<arg>quite_webdriver</arg>
+<arg>${globaldriver}</arg>
+</arguments>
+<status status="PASS" starttime="20200215 19:10:44.867" endtime="20200215 19:10:45.037"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200215 19:10:50.038" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200215 19:10:45.037" endtime="20200215 19:10:50.039"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:44.866" endtime="20200215 19:10:50.039"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:01.541" endtime="20200215 19:10:50.039" critical="yes"></status>
+</test>
+<test id="s1-t2" name="PLP Loading 2">
+<kw name="I open website" library="HomepageStepDefs" type="setup">
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${selenium_functions}</arg>
+<arg>set_web_driver_and_launch_site</arg>
+<arg>chrome</arg>
+<arg>https://bedbathandbeyond.com</arg>
+</arguments>
+<assign>
+<var>${driver}</var>
+</assign>
+<msg timestamp="20200215 19:11:11.381" level="INFO">In Selenium Functions
+chrome
+https://bedbathandbeyond.com
+Trying to launch Chrome browser
+IO pop up present
+IO modal closed</msg>
+<msg timestamp="20200215 19:11:11.381" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6841e5de0e8ba0c6e081eede4bd2aca6")&gt;</msg>
+<status status="PASS" starttime="20200215 19:10:50.041" endtime="20200215 19:11:11.381"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${driver}</arg>
+</arguments>
+<msg timestamp="20200215 19:11:11.383" level="INFO">&lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6841e5de0e8ba0c6e081eede4bd2aca6")&gt;</msg>
+<status status="PASS" starttime="20200215 19:11:11.382" endtime="20200215 19:11:11.383"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${globaldriver}</arg>
+<arg>${driver}</arg>
+</arguments>
+<msg timestamp="20200215 19:11:11.384" level="INFO">${globaldriver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6841e5de0e8ba0c6e081eede4bd2aca6")&gt;</msg>
+<status status="PASS" starttime="20200215 19:11:11.383" endtime="20200215 19:11:11.384"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${globaldriver}</arg>
+</arguments>
+<msg timestamp="20200215 19:11:11.384" level="INFO">&lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6841e5de0e8ba0c6e081eede4bd2aca6")&gt;</msg>
+<status status="PASS" starttime="20200215 19:11:11.384" endtime="20200215 19:11:11.385"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:50.041" endtime="20200215 19:11:11.385"></status>
+</kw>
+<kw name="When I choose to close IO pop up modal" library="HomepageStepDefs">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Complete</arg>
+</arguments>
+<msg timestamp="20200215 19:11:11.386" level="INFO">Complete</msg>
+<status status="PASS" starttime="20200215 19:11:11.386" endtime="20200215 19:11:11.386"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:11:11.385" endtime="20200215 19:11:11.386"></status>
+</kw>
+<kw name="Then I choose to navigate to L2 PLP" library="HomepageStepDefs">
+<arguments>
+<arg>Furniture</arg>
+<arg>Bedroom</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Navigating to L2 PLP</arg>
+</arguments>
+<msg timestamp="20200215 19:11:11.387" level="INFO">Navigating to L2 PLP</msg>
+<status status="PASS" starttime="20200215 19:11:11.387" endtime="20200215 19:11:11.387"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${homepage}</arg>
+<arg>navigate_to_l0</arg>
+<arg>${globaldriver}</arg>
+<arg>Categories</arg>
+</arguments>
+<msg timestamp="20200215 19:11:16.732" level="INFO">Navigating to L0</msg>
+<status status="PASS" starttime="20200215 19:11:11.387" endtime="20200215 19:11:16.733"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${homepage}</arg>
+<arg>navigate_to_l1</arg>
+<arg>${globaldriver}</arg>
+<arg>move to</arg>
+<arg>${l1cat}</arg>
+</arguments>
+<msg timestamp="20200215 19:11:22.335" level="INFO">Navigating to L1
+&lt;selenium.webdriver.chrome.webdriver.WebDriver (session="6841e5de0e8ba0c6e081eede4bd2aca6")&gt;
+Furniture</msg>
+<status status="PASS" starttime="20200215 19:11:16.733" endtime="20200215 19:11:22.335"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${homepage}</arg>
+<arg>navigate_to_l2</arg>
+<arg>${globaldriver}</arg>
+<arg>click</arg>
+<arg>${l1cat}</arg>
+<arg>${l2cat}</arg>
+</arguments>
+<msg timestamp="20200215 19:11:27.822" level="INFO">Navigating to L2</msg>
+<status status="PASS" starttime="20200215 19:11:22.335" endtime="20200215 19:11:27.822"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:11:11.386" endtime="20200215 19:11:27.823"></status>
+</kw>
+<kw name="Then I verify user landed on PLP" library="HomepageStepDefs">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Checking if PLP is loaded</arg>
+</arguments>
+<msg timestamp="20200215 19:11:27.824" level="INFO">Checking if PLP is loaded</msg>
+<status status="PASS" starttime="20200215 19:11:27.823" endtime="20200215 19:11:27.824"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${plp}</arg>
+<arg>check_per_page_sort</arg>
+<arg>${globaldriver}</arg>
+</arguments>
+<msg timestamp="20200215 19:11:27.871" level="INFO">Per Page Sort option available</msg>
+<status status="PASS" starttime="20200215 19:11:27.824" endtime="20200215 19:11:27.871"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${plp}</arg>
+<arg>check_if_product_grid_displayed</arg>
+<arg>${globaldriver}</arg>
+</arguments>
+<msg timestamp="20200215 19:11:33.336" level="INFO">Number of products on PLP:24</msg>
+<status status="PASS" starttime="20200215 19:11:27.872" endtime="20200215 19:11:33.336"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:11:27.823" endtime="20200215 19:11:33.336"></status>
+</kw>
+<kw name="I close browser" library="HomepageStepDefs" type="teardown">
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${selenium_functions}</arg>
+<arg>quite_webdriver</arg>
+<arg>${globaldriver}</arg>
+</arguments>
+<status status="PASS" starttime="20200215 19:11:33.337" endtime="20200215 19:11:33.492"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200215 19:11:38.494" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200215 19:11:33.493" endtime="20200215 19:11:38.494"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:11:33.337" endtime="20200215 19:11:38.494"></status>
+</kw>
+<status status="PASS" starttime="20200215 19:10:50.040" endtime="20200215 19:11:38.494" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200215 19:10:01.294" endtime="20200215 19:11:38.496"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="MyTestSuite">MyTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200215 19:10:01.472" level="WARN">Imported library '/Users/chiragsolanki/PycharmProjects/Shop-Automation/utilities' contains no keywords.</msg>
+<msg timestamp="20200215 19:10:01.473" level="WARN">Imported library '/Users/chiragsolanki/PycharmProjects/Shop-Automation/constants' contains no keywords.</msg>
+</errors>
+</robot>

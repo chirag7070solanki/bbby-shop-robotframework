@@ -1,0 +1,5 @@
+xpath_io_pop_up = "//*[@id='rclModal']/button[@data-locator='checkout-crossicon']"
+xpath_lo_products = "//*[@id='firstTopNavItem']"
+xpath_PLP_perpage_sort = "(//*[@data-locator='plpPageSort']/button)[1]"
+xpath_PLP_product_title = "//*[@data-locator='product_tile_title']"
+xpath_plp_region3 = "//*[@id='region3']"
